@@ -1,7 +1,6 @@
-// const { sendResponse } = require("../helpers/utils");
 const mongoose = require("mongoose");
 const Car = require("../models/Car");
-const carController = {}
+const carController = {};
 
 //get all cars
 carController.getAllCars = async (req, res, next) => {
@@ -25,7 +24,7 @@ carController.getAllCars = async (req, res, next) => {
   } catch (error) {
     res.status(400).send({ message: error.message });
   }
-}
+};
 //create new car
 carController.createCar = async (req, res, next) => {
   try {
@@ -92,4 +91,4 @@ carController.deleteCar = async (req, res, next) => {
   }
 };
 
-module.exports = carController
+module.exports = carController;

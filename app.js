@@ -21,6 +21,7 @@ app.use('/', indexRouter);
 
 const mongoose = require('mongoose');
 const { AppError, sendResponse } = require("./helpers/utils");
+
 /* DB connection */
 const mongoURI = process.env.MONGODB_URI
 
