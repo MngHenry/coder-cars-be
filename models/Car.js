@@ -4,7 +4,7 @@ const carSchema = new mongoose.Schema(
   {
     make: { type: String, required: true },
     model: { type: String, required: true },
-    year: { type: Number, min: 1900, required: true },
+    release_date: { type: Number, min: 1900, required: true },
     transmission_type: {
       type: String,
       enum: [
